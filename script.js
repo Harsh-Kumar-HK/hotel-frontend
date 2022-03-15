@@ -106,3 +106,35 @@ function hamMenu() {
         document.querySelector('#language-menu a').style = 'background: var(--dark-font)';
     }
 }
+
+// Make Guests List
+const maxGuests = 7;
+const guestList = document.querySelector('.guests-select');
+const guestInput = document.querySelector('.guests.calendar-input');
+
+guestInput.addEventListener('click', () => guestList.classList.toggle('show-guests'));
+
+for(let i = 1; i < maxGuests; i++) {
+    guestList.innerHTML += `<li id="ul-${i}">${i}</li>`;
+}
+
+// Working Guest List
+const guests = document.querySelectorAll('.guests-select li');
+
+guests.forEach(guest => {
+    guest.addEventListener('click', () => {
+        document.querySelector('.guests .guest-no').innerHTML = guest.innerHTML;
+        guestList.classList.toggle('show-guests');
+    })
+})
+
+function guestsClick() {
+    document.querySelector('.guests').addEventListener('click', (e) => e.stopPropagation());
+    document.addEventListener('click', (e) => {
+        if ((e.target).matches('.guests') === false)  {
+            guestList.classList.remove('show-guests');
+        }
+    })
+}
+
+guestsClick();
