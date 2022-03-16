@@ -377,6 +377,8 @@ header > div {
   -webkit-transition: opacity 0.8s ease;
   -o-transition: opacity 0.8s ease;
   transition: opacity 0.8s ease;
+  width: 100%;
+  height: 100%;
 }
 
 #slider .slide.active {
@@ -414,11 +416,6 @@ header > div {
 
 #slider .slides {
   position: relative;
-  width: 100%;
-  height: 100%;
-}
-
-#slider .slide {
   width: 100%;
   height: 100%;
 }
@@ -575,6 +572,12 @@ header > div {
 
 #slider .sl-title input {
   position: absolute;
+  width: 100%;
+  height: 100%;
+  right: 5px;
+  bottom: 0;
+  opacity: 0;
+  cursor: pointer;
 }
 
 #slider .sl-title label {
@@ -589,15 +592,6 @@ header > div {
 #slider .sl-title li:hover label,
 #slider .sl-title li.active label {
   opacity: 1;
-}
-
-#slider .sl-title input {
-  width: 100%;
-  height: 100%;
-  right: 5px;
-  bottom: 0;
-  opacity: 0;
-  cursor: pointer;
 }
 
 #slider .sl-title li.active label {
@@ -701,11 +695,13 @@ header > div {
 
 .sl-calendar .guests::after {
   content: url(images/arrow-down-icon.png);
+  top: 12px;
 }
 
 .sl-calendar .dates::after {
   content: url(images/calendar-icon.png);
   cursor: pointer;
+  top: 22px;
 }
 
 .sl-calendar .guests::after,
@@ -714,7 +710,6 @@ header > div {
   width: 16px;
   height: 16px;
   left: 91%;
-  top: 22px;
   z-index: -1;
 }
 
@@ -1185,10 +1180,6 @@ header > div {
 
 .guests-select.show-guests {
   height: auto;
-}
-
-.sl-calendar .guests::after {
-  top: 12px;
 }
 
 .guests-select li:hover {
