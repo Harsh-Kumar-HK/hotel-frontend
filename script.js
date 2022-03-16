@@ -94,7 +94,7 @@ const hamIcon = document.querySelector('.hamburger-icon');
 const mobileMenu = document.querySelector('#main-menu-wrapper.mobile-menu');
 
 function hamMenu() {
-    if (toggle.checked == true) {
+    if (toggle.checked) {
         hamIcon.classList.add('close-btn');
         mobileMenu.style = 'opacity: 1;  visibility: visible; transition: all 0.5s ease';
         hamIcon.style = 'background: var(--dark-gray)';
