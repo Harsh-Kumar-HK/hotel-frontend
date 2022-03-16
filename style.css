@@ -283,11 +283,11 @@ header > div {
   transition: all 0.5s ease;
 }
 
-#main-menu-wrapper .main-menu i {
+#main-menu-wrapper .main-menu em {
   font-size: 20px;
 }
 
-#main-menu-wrapper .main-menu i::before {
+#main-menu-wrapper .main-menu em::before {
   position: absolute;
   top: 0px;
   right: -3px;
@@ -1093,7 +1093,7 @@ header > div {
     line-height: 43px;
     text-align: center;
   }
-  #main-menu-wrapper.mobile-menu .main-menu i::before {
+  #main-menu-wrapper.mobile-menu .main-menu em::before {
     right: -4px;
     top: -13px;
     line-height: 43px;
