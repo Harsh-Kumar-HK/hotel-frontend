@@ -1148,6 +1148,12 @@ header > div {
 .guests-select li {
   font-family: var(--main-font-bold);
   display: block;
+  cursor: pointer;
+  padding: 2px 14px;
+  font-size: 14px;
+  -webkit-transition: padding .2s ease;
+  -o-transition: padding .2s ease;
+  transition: padding .2s ease;
 }
 
 .guests {
@@ -1183,15 +1189,6 @@ header > div {
 
 .sl-calendar .guests::after {
   top: 12px;
-}
-
-.guests-select li {
-  cursor: pointer;
-  padding: 2px 14px;
-  font-size: 14px;
-  -webkit-transition: padding .2s ease;
-  -o-transition: padding .2s ease;
-  transition: padding .2s ease;
 }
 
 .guests-select li:hover {
