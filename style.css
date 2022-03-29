@@ -269,7 +269,7 @@ header > div {
   background: var(--light-font);
   width: 0;
   height: 5px;
-  bottom: 0px;
+  bottom: 0;
   left: 0;
   -webkit-transition: width 0.5s ease;
   -o-transition: width 0.5s ease;
@@ -289,7 +289,7 @@ header > div {
 
 #main-menu-wrapper .main-menu em::before {
   position: absolute;
-  top: 0px;
+  top: 0;
   right: -3px;
   line-height: 110px;
 }
@@ -720,8 +720,8 @@ header > div {
   font-weight: normal;
   border: 0 !important;
   border-radius: 0 !important;
-  -webkit-box-shadow: 0 0px 5px 2px #0000001f;
-  box-shadow: 0 0px 5px 2px #0000001f;
+  -webkit-box-shadow: 0 0 5px 2px #0000001f;
+  box-shadow: 0 0 5px 2px #0000001f;
 }
 
 .daterangepicker .calendar-time,
